@@ -13,6 +13,7 @@
 - 支持多种编码（UTF-8、GBK）
 - 提供专业的报告结构和格式化
 - 安全的API密钥管理
+- 蛋白质序列分析功能
 
 ## 安装
 
@@ -31,11 +32,43 @@ cp .env.example .env
 
 ## 使用方法
 
+### 基本用法
+
 ```python
 from src.report_generator import generate_report
 
 # Generate a report from JSON data
 generate_report('path/to/evo2_results.json', 'output_report.md')
+```
+
+### 运行功能测试
+
+项目包含一个功能测试脚本，可以用来测试核心功能：
+
+```bash
+# Run the test script
+python run_test.py
+```
+
+测试脚本会：
+1. 测试报告生成功能
+2. 测试蛋白质序列分析功能
+3. 测试错误处理机制
+
+### 蛋白质序列分析
+
+除了报告生成外，DeepSeq-Report还提供蛋白质序列分析功能：
+
+```python
+from src.protein_analysis import analyze_sequence
+
+# 分析蛋白质序列
+sequence = "MKCPECGKSFSQRANLQRHQRTHTGEK"
+results = analyze_sequence(sequence)
+
+# 打印结果
+print(f"序列长度: {results['sequence_length']}")
+print(f"分子量: {results['molecular_weight']} Da")
 ```
 
 ## 输入格式
@@ -83,10 +116,16 @@ generate_report('path/to/evo2_results.json', 'output_report.md')
 - Technical details...
 ```
 
-## 开发指南
+## 文档
 
-请参阅 [DEVELOPMENT.md](docs/DEVELOPMENT.md) 了解开发细节。
+- [用户指南](docs/USER_GUIDE.md) - 详细的使用说明和高级功能介绍
+- [开发文档](docs/DEVELOPMENT.md) - 为开发者提供的技术细节和贡献指南
+
+## 示例
+
+查看 `examples` 目录中的示例文件，了解输入格式。
+查看 `test_output` 目录中的示例结果，了解输出格式。
 
 ## 许可证
 
-本项目采用MIT许可证。详见LICENSE文件。 
+本项目采用MIT许可证。详见[LICENSE](LICENSE)文件。 
