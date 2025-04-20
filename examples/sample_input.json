@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "input_file": "sample.fasta",
+    "evo2_model": "v2.1",
+    "analysis_type": "comprehensive",
+    "timestamp": "2023-12-25T14:30:22",
+    "confidence_threshold": 0.6
+  },
+  "predictions": [
+    {
+      "protein_id": "P12345",
+      "predicted_go_term": "GO:0003700",
+      "go_term_name": "DNA-binding transcription factor activity",
+      "confidence_score": 0.85,
+      "notes": "High confidence prediction based on motif analysis"
+    },
+    {
+      "protein_id": "P67890",
+      "predicted_go_term": "GO:0005524",
+      "go_term_name": "ATP binding",
+      "confidence_score": 0.92,
+      "notes": "Strong conservation across species"
+    },
+    {
+      "protein_id": "Q54321",
+      "predicted_go_term": "GO:0016021",
+      "go_term_name": "Integral component of membrane",
+      "confidence_score": 0.65,
+      "notes": "Predicted transmembrane domains"
+    },
+    {
+      "protein_id": "A98765",
+      "predicted_go_term": "GO:0004672",
+      "go_term_name": "Protein kinase activity",
+      "confidence_score": 0.45,
+      "notes": "Low confidence prediction, may require experimental validation"
+    }
+  ]
+} 
