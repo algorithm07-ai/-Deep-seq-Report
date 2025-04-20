@@ -1,0 +1,70 @@
+{
+  "sequence_length": 27,
+  "molecular_weight": 3644.99,
+  "amino_acid_composition": {
+    "A": 3.7,
+    "R": 11.11,
+    "N": 3.7,
+    "D": 0.0,
+    "C": 7.41,
+    "E": 7.41,
+    "Q": 11.11,
+    "G": 7.41,
+    "H": 7.41,
+    "I": 0.0,
+    "L": 3.7,
+    "K": 11.11,
+    "M": 3.7,
+    "F": 3.7,
+    "P": 3.7,
+    "S": 7.41,
+    "T": 7.41,
+    "W": 0.0,
+    "Y": 0.0,
+    "V": 0.0
+  },
+  "physicochemical_properties": {
+    "hydrophobic_percent": 33.33,
+    "positive_charge_count": 8,
+    "negative_charge_count": 2,
+    "net_charge": 6,
+    "estimated_isoelectric_point": 10.0,
+    "aromaticity": 3.7
+  },
+  "regions": {
+    "hydrophobic_regions": [
+      {
+        "start": 0,
+        "end": 7,
+        "sequence": "MKCPECG"
+      }
+    ],
+    "charged_regions": [
+      {
+        "start": 16,
+        "end": 23,
+        "sequence": "QRHQRTH",
+        "net_charge": 2.2
+      },
+      {
+        "start": 17,
+        "end": 24,
+        "sequence": "RHQRTHT",
+        "net_charge": 2.2
+      },
+      {
+        "start": 20,
+        "end": 27,
+        "sequence": "RTHTGEK",
+        "net_charge": 1.1
+      }
+    ]
+  },
+  "secondary_structure": {
+    "helix_fraction": 0.34,
+    "sheet_fraction": 0.29,
+    "turn_fraction": 0.36,
+    "prediction_method": "simple",
+    "note": "This is a simplified prediction and should not be used for scientific purposes."
+  }
+}
